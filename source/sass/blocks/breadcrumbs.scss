@@ -1,0 +1,67 @@
+.breadcrumbs {
+	margin: 92px 0 0;
+
+	@include vp-767 {
+		margin: 75px 0 0;
+	}
+
+	&__list {
+		list-style-type: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		gap: 24px;
+
+		@include vp-767 {
+			gap: 15px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 500;
+		white-space: nowrap;
+
+		@include vp-767 {
+			font-size: 10px;
+			line-height: 12px;
+
+			&:last-child {
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+
+	&__link {
+		color: $color-main-accent;
+		transition: color $trans-default;
+
+		@include hover-focus {
+			color: $color-cloudy;
+		}
+
+		&--active {
+			color: $color-cloudy;
+		}
+
+		&:not(.breadcrumbs__link--active)::before {
+			content: "/";
+			font-size: 12px;
+			line-height: 16px;
+			font-weight: 500;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -14px;
+
+			@include vp-767 {
+				font-size: 10px;
+				line-height: 12px;
+				right: -10px;
+			}
+		}
+	}
+}

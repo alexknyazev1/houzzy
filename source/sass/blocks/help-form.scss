@@ -1,0 +1,179 @@
+.help-form {
+	padding: 50px 0;
+
+	@media (max-width: 999px) {
+		.btn {
+			width: 100%;
+		}
+	}
+
+	@include vp-767 {
+		padding: 40px 0;
+	}
+
+	&__title {
+		margin: 0 0 10px;
+		font-size: 24px;
+		line-height: 28px;
+		color: $color-main-accent;
+		font-weight: 400;
+		text-align: center;
+		
+		@include vp-767 {
+			font-size: 20px;
+			line-height: 24px;
+			margin: 0 0 5px;
+		}
+	}
+
+	&__desc {
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-main-accent;
+		padding: 0;
+		margin: 0 0 61px;
+		text-align: center;
+
+		@include vp-1023 {
+			margin: 0 0 50px;
+		}
+
+		@include vp-767 {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0 0 40px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	@media (max-width: 999px) {
+		max-width: 670px;
+		margin: 0 auto;
+	}
+
+	@include vp-767 {
+		max-width: 320px;
+	}
+
+	&__input {
+		position: relative;
+		width: 100%;
+		max-width: 320px;
+
+		&--error {
+
+			&::before {
+				content: "Поле обязательно для заполнения";
+				position: absolute;
+				top: 65px;
+				left: 5px;
+				color: #E80E0A;
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: 500;
+			}
+
+			.help-form__field {
+				border: 1px solid #E80E0A;
+			}
+		}
+
+		@include vp-767 {
+			&:nth-child(1) {
+				margin: 0 0 21px;
+			}
+		}
+	}
+
+	&__field {
+		border: 1px solid $color-main-accent-10;
+		padding: 19px 20px;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 500;
+		background-color: $color-green-white;
+		width: 100%;
+		outline: none;
+
+		@include vp-767 {
+			font-size: 14px;
+			line-height: 18px;
+			padding: 16px 20px;
+		}
+
+		&::placeholder {
+			color: $color-main-accent-30;
+			font-size: 16px;
+			line-height: 22px;
+
+			@include vp-767 {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+
+		&:required {
+			&::before {
+				content: "Поле обязательно для заполнения";
+				bottom: -5px;
+				left: 0;
+				color: red;
+				position: absolute;
+			}
+		}
+
+		@include hover-focus {
+			border: 1px solid $color-main-accent;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		top: -22px;
+		left: 0;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 500;
+		color: $color-finch;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	&__consent {
+		display: block;
+		text-align: center;
+		margin: 30px 0 0;
+
+		@include vp-1023 {
+			margin: 10px 0 0;
+		}
+
+		@include vp-767 {
+
+		}
+	}
+
+	&__consent,
+	&__privacy {
+		font-size: 12px;
+		line-height: 16px;
+		color: $color-locust;
+		font-weight: 500;
+
+		@include vp-767 {
+			font-size: 10px;
+			line-height: 12px;
+		}
+	}
+
+	&__privacy {
+		text-decoration: underline;
+	}
+}

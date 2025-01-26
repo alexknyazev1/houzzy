@@ -1,0 +1,41 @@
+.product-color {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: $color-soft-peach;
+		background-clip: content-box;
+		border: 1px solid $color-hint-of-red;
+		transition: border $trans-default;
+		padding: 3px;
+		outline: none;
+
+		@media (max-width: 430px) {
+			width: 40px;
+			height: 40px;
+		}
+
+		@include hover-focus {
+			border: 1px solid $color-moon-mist;
+		}
+
+		&[disabled] {
+			cursor: auto;
+			pointer-events: none;
+		}
+
+		&--active {
+			border: 1px solid $color-main-accent;
+		}
+
+		&--cloudy {
+			background-color: $color-cloudy-dark;
+		}
+
+		&--mischka {
+			background-color: $color-mischka;
+		}
+
+		&--bokara {
+			background-color: $color-main-accent;
+		}
+	}

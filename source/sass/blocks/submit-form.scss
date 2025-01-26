@@ -1,0 +1,151 @@
+.submit-form {
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	align-items: center;
+	gap: 60px;
+	background-color: $color-green-white;
+	padding: 48px 80px;
+
+	@media (max-width: 1235px) {
+		grid-template-columns: 1fr auto;
+		gap: 25px 48px;
+		padding: 30px 40px;
+	}
+
+	@include vp-767 {
+		grid-template-columns: 1fr;
+		padding: 20px 30px;
+		gap: 20px;
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 28px;
+		color: $color-finch;
+		max-width: 390px;
+		margin: 0 auto 0 0;
+		padding: 0;
+
+		@media (max-width: 1235px) {
+			grid-column: span 2;
+			max-width: 100%;
+		}
+
+		@include vp-1023 {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		@include vp-767 {
+			grid-column: auto;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__input {
+		max-width: 340px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		&--error {
+			position: relative;
+
+			&::before {
+				content: "Поле заполнено некорректно";
+				position: absolute;
+				top: 35px;
+				left: 0;
+				color: #E80E0A;
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: 500;
+			}
+
+			.submit-form__field {
+				border-bottom: 1px solid #E80E0A;
+			}
+
+			.submit-form__consent {
+				margin-top: 10px;
+			}
+		}
+
+		@media (max-width: 1235px) {
+			max-width: 100%;
+		}
+	}
+
+	&__field {
+		width: 100%;
+		border: none;
+		background-color: transparent;
+		border-bottom: 1px solid $color-locust;
+		padding-bottom: 10px;
+		outline: none;
+		color: $color-main-accent;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 500;
+		transition: border $trans-default;
+
+		@include hover-focus {
+			border-bottom: 1px solid $color-moon-mist;
+
+			&::placeholder {
+				color: $color-cloudy;
+			}
+		}
+
+		&::placeholder {
+			color: $color-main-accent;
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: 500;
+			transition: color	$trans-default;
+		}
+
+		@include vp-767 {
+			font-size: 14px;
+			line-height: 18px;
+
+			&::placeholder {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+	}
+
+	&__consent {
+		width: 100%;
+		font-size: 12px;
+		line-height: 16px;
+		color: $color-locust;
+		padding: 0;
+		margin: 0;
+
+		.submit-form__confidea {
+				font-size: 12px;
+				line-height: 16px;
+				color: $color-locust;
+				text-decoration: underline;
+		}
+
+		@include vp-767 {
+			font-size: 10px;
+			line-height: 12px;
+
+			.submit-form__confidea {
+			font-size: 10px;
+			line-height: 12px;
+			}
+		}
+	}
+
+	&__btn {
+		@include vp-767 {
+			width: 100%;
+		}
+	}
+}

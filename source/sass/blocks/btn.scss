@@ -1,0 +1,48 @@
+.btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: $color-hint-of-red;
+	padding: 20px;
+	border: 1px solid $color-swiss-coffee;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;
+	color: $color-main-accent;
+	width: 240px;
+	transition: background-color $trans-default, border $trans-default, color $trans-default;
+	outline: none;
+
+	@media (max-width: 620px) {
+		font-size: 12px;
+		line-height: 16px;
+		padding: 17px;
+		width: 200px;
+	}
+
+	&--s {
+		padding: 17px;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	@include hover-focus {
+		background-color: $color-green-white;
+		border: 1px solid $color-green-white;
+	}
+
+	&--secondary {
+		background-color: $color-main-accent;
+		color: $color-default-white;
+		border: 1px solid $color-main-accent;
+
+		@include hover-focus {
+			border: 1px solid $color-main-accent;
+			color: $color-main-accent;
+		}
+	}
+}

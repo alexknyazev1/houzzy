@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	@@include("source/html/base/head.html")
+	<title>Houzzy - интернет магазин товаров для дома</title>
+
+</head>
+
+<body>
+
+	<div style="display: none;">
+		@@include("build/img/sprite_auto.svg")
+	</div>
+
+	<div class="wrapper">
+		@@include("source/html/base/header.html", {
+		"index": true
+		})
+
+		<main>
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Home Decor</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link breadcrumbs__link--active" href="#">Ваза Керамическая Terravisori</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="product">
+				<div class="container">
+					<div class="product__wrapper">
+						<ul class="product__gallery">
+							<li class="product__gallery-item">
+								<picture>
+									<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-1-mobile.png 1x, img/content/catalog/terravisori/terravisori-1-mobile@2x.png 2x">
+									<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-1-tablet.png 1x, img/content/catalog/terravisori/terravisori-1-tablet@2x.png 2x">
+									<img class="product__gallery-img" src="img/content/catalog/terravisori/terravisori-1.png" srcset="img/content/catalog/terravisori/terravisori-1@2x.png 2x" width="120" height="138" alt="Ваза керамическая terravisori">
+								</picture>
+							</li>
+							<li class="product__gallery-item">
+								<picture>
+									<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-2-mobile.png 1x, img/content/catalog/terravisori/terravisori-2-mobile@2x.png 2x">
+									<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-2-tablet.png 1x, img/content/catalog/terravisori/terravisori-2-tablet@2x.png 2x">
+									<img class="product__gallery-img" src="img/content/catalog/terravisori/terravisori-2.png" srcset="img/content/catalog/terravisori/terravisori-2@2x.png 2x" width="120" height="138" alt="Ваза керамическая terravisori">
+								</picture>
+							</li>
+							<li class="product__gallery-item">
+								<picture>
+									<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-3-mobile.png 1x, img/content/catalog/terravisori/terravisori-3-mobile@2x.png 2x">
+									<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-3-tablet.png 1x, img/content/catalog/terravisori/terravisori-3-tablet@2x.png 2x">
+									<img class="product__gallery-img" src="img/content/catalog/terravisori/terravisori-3.png" srcset="img/content/catalog/terravisori/terravisori-3@2x.png 2x" width="120" height="138" alt="Ваза керамическая terravisori">
+								</picture>
+							</li>
+							<li class="product__gallery-item">
+								<picture>
+									<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-4-mobile.png 1x, img/content/catalog/terravisori/terravisori-4-mobile@2x.png 2x">
+									<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-4-tablet.png 1x, img/content/catalog/terravisori/terravisori-4-tablet@2x.png 2x">
+									<img class="product__gallery-img" src="img/content/catalog/terravisori/terravisori-4.png" srcset="img/content/catalog/terravisori/terravisori-4@2x.png 2x" width="120" height="138" alt="Ваза керамическая terravisori">
+								</picture>
+							</li>
+							<li class="product__gallery-item product__gallery-item--xxl">
+								<picture>
+									<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-5-mobile.png 1x, img/content/catalog/terravisori/terravisori-5-mobile@2x.png 2x">
+									<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-5-tablet.png 1x, img/content/catalog/terravisori/terravisori-5-tablet@2x.png 2x">
+									<img class="product__gallery-img" src="img/content/catalog/terravisori/terravisori-5.png" srcset="img/content/catalog/terravisori/terravisori-5@2x.png 2x" width="600" height="560" alt="Ваза керамическая terravisori">
+								</picture>
+								<span class="product__sale">-20%</span>
+							</li>
+						</ul>
+						<div class="product__inner">
+							<span class="product__category">Home decor</span>
+							<h1 class="product__name">Ваза керамическая terravisori</h1>
+							<div class="product__info">
+								<span class="product__price">
+									<span class="product__value">1&nbsp;520&nbsp;руб.</span>
+									<span class="product__value-sale">1&nbsp;900&nbsp;руб.</span>
+								</span>
+								<a href="#" class="product__split">
+									<svg class="product__split-icon" width="68" height="20" aria-hidden="true">
+										<use xlink:href="#icon-dolyami"></use>
+									</svg>
+									<span class="product__split-text">4&nbsp;платежа по&nbsp;380&nbsp;руб.</span>
+									<svg class="product__split-arrow" width="16" height="16" aria-hidden="true">
+										<use xlink:href="#icon-arrow-right"></use>
+									</svg>
+								</a>
+							</div>
+							<ul class="product__colors">
+								<li class="product__colors-item">
+									<button class="product-color btn-reset" type="button"></button>
+								</li>
+								<li class="product__colors-item">
+									<button class="product-color product-color--active product-color--cloudy btn-reset" type="button" disabled></button>
+								</li>
+								<li class="product__colors-item">
+									<button class="product-color product-color--mischka btn-reset" type="button"></button>
+								</li>
+								<li class="product__colors-item">
+									<button class="product-color product-color--bokara btn-reset" type="button"></button>
+								</li>
+							</ul>
+							<div class="product__box">
+								<button class="product__btn product__btn--active btn btn--secondary btn--s btn-reset" type="button">
+									<svg class="product__btn-icon" width="24" height="24" aria-hidden="true">
+										<use xlink:href="#icon-bag"></use>
+									</svg>
+									<span class="product__btn-text">
+										<span class="product__btn-addcart">Добавить в корзину</span>
+										<span class="product__btn-cart">Товар в корзине</span>
+									</span>
+								</button>
+								<button class="product__favourites product__favourites--active btn-reset" type="button">
+									<svg class="product__favourites-icon" width="24" height="24" aria-hidden="true">
+										<use xlink:href="#icon-favorites"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="product__reference">
+								<a href="#" class="product__link">
+									Подробные характеристики
+								</a>
+								<a href="#" class="product__link">
+									Как сделать заказ
+								</a>
+							</div>
+							<div class="product__contact">
+								<span class="product__contact-text">Есть вопросы по&nbsp;товару или заказу?</span>
+								<a href="tel:+78000000000" class="product__phone">8 (800) 000-00-00</a>
+								<span class="product__chart">ежедневно с&nbsp;10:00 до&nbsp;20:00 по&nbsp;МСК</span>
+							</div>
+						</div>
+					</div>
+					<h2 class="product__title">О товаре</h2>
+					<p class="product__desc">
+						Изящная декоративная стеклянная ваза для домашнего декора. Ваза идеально подойдет для цветов и&nbsp;всевозможных творческих композиций. Керамическая ваза послужит прекрасным декором для вашего дома и&nbsp;дачи. Может использоваться в&nbsp;качестве подарка маме, бабушке, сестре, жене на&nbsp;8&nbsp;марта, день рождения, новоселье и&nbsp;т.д. Благодаря уникальному дизайну и&nbsp;цвету данная ваза станет украшением любого стола и&nbsp;интерьера и&nbsp;никого не&nbsp;оставит равнодушным.
+					</p>
+					<button class="product__next btn-reset" type="button">Раскрыть подробнее</button>
+					<h2 class="product__title">Товар в интерьере</h2>
+					<ul class="product__kit">
+						<li class="product__kit-item">
+							<picture>
+								<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-kit-1-mobile.png 1x, img/content/catalog/terravisori/terravisori-kit-1-mobile@2x.png 2x">
+								<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-kit-1-tablet.png 1x, img/content/catalog/terravisori/terravisori-kit-1-tablet@2x.png 2x">
+								<img class="product__kit-img" src="img/content/catalog/terravisori/terravisori-kit-1.png" srcset="img/content/catalog/terravisori/terravisori-kit-1@2x.png 2x" width="456" height="456" alt="Ваза керамическая terravisori">
+							</picture>
+						</li>
+						<li class="product__kit-item">
+							<picture>
+								<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-kit-2-mobile.png 1x, img/content/catalog/terravisori/terravisori-kit-2-mobile@2x.png 2x">
+								<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-kit-2-tablet.png 1x, img/content/catalog/terravisori/terravisori-kit-2-tablet@2x.png 2x">
+								<img class="product__kit-img" src="img/content/catalog/terravisori/terravisori-kit-2.png" srcset="img/content/catalog/terravisori/terravisori-kit-2@2x.png 2x" width="456" height="456" alt="Ваза керамическая terravisori">
+							</picture>
+						</li>
+						<li class="product__kit-item">
+							<picture>
+								<source media="(max-width: 767px)" srcset="img/content/catalog/terravisori/terravisori-kit-3-mobile.png 1x, img/content/catalog/terravisori/terravisori-kit-3-mobile@2x.png 2x">
+								<source media="(max-width: 1152px)" srcset="img/content/catalog/terravisori/terravisori-kit-3-tablet.png 1x, img/content/catalog/terravisori/terravisori-kit-3-tablet@2x.png 2x">
+								<img class="product__kit-img" src="img/content/catalog/terravisori/terravisori-kit-3.png" srcset="img/content/catalog/terravisori/terravisori-kit-3@2x.png 2x" width="456" height="456" alt="Ваза керамическая terravisori">
+							</picture>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		@@include("source/html/base/footer.html")
+	</div>
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

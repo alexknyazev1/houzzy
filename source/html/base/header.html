@@ -1,0 +1,86 @@
+<header class="header @@if (context.mod) { header--@@mod }">
+	<div class="container">
+		<div class="header__wrapper">
+			@@if (context.index) {
+			<a class="header__logo" href="index.html" aria-label="Переход на главную">
+				<svg class="header__logo-img" width="110" height="40" aria-hidden="true">
+					<use xlink:href="#logo"></use>
+				</svg>
+			</a>
+			}
+			@@if (!context.index) {
+			<span class="header__logo">
+				Логотип
+			</span>
+			}
+			<nav class="main-nav">
+				<button class="main-nav__toggle btn-reset" id="toggle" type="button" aria-label="Переключатель отображения меню"
+					aria-pressed="false"></button>
+				<div class="main-nav__wrapper">
+					<svg class="main-nav__mobile-logo" width="500" height="149" aria-hidden="true">
+						<use xlink:href="#mobile-logo"></use>
+					</svg>
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Акции</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Отзывы</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Доставка</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Оплата</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">События</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="tel: +78000000000" class="main-nav__phone">
+						<svg class="main-nav__phone-icon" width="24" height="24" aria-hidden="true">
+							<use xlink:href="#icon-phone"></use>
+						</svg>
+						8 (800) 000-00-00
+					</a>
+				</div>
+			</nav>
+			<ul class="header__user-list">
+				<li class="header__user-item">
+					<button class="header__user-link" type="button">
+						<svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+							<use xlink:href="#icon-search"></use>
+						</svg>
+					</button>
+				</li>
+				<li class="header__user-item">
+					<a class="header__user-link" href="#">
+						<svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+							<use xlink:href="#icon-heart"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="header__user-item">
+					<a class="header__user-link" href="#">
+						<svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+							<use xlink:href="#icon-cart"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="header__user-item">
+					<a class="header__user-link" href="#">
+						<svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+							<use xlink:href="#icon-phone"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

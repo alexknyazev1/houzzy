@@ -1,0 +1,12 @@
+.help {
+	margin-top: 120px;
+	background-color: $color-green-white;
+
+	@media (max-width: 1399px) {
+		margin-top: 60px;
+	}
+
+	@media (max-width: 620px) {
+		margin-top: 50px;
+	}
+}

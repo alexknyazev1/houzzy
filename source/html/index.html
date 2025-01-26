@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	@@include("source/html/base/head.html")
+	<title>Houzzy - интернет магазин товаров для дома</title>
+
+</head>
+
+<body>
+
+	<div style="display: none;">
+		@@include("build/img/sprite_auto.svg")
+	</div>
+
+	<div class="wrapper">
+		@@include("source/html/base/header.html", {
+		"index": true
+		})
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1 class="visually-hidden">Houzzy - интернет магазин товаров для дома</h1>
+					<ul class="hero__product-list">
+						<li class="hero__product-item">
+							<button class="product-spoiler btn-reset" type="button">
+								<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="hero__product-item">
+							<button class="product-spoiler btn-reset" type="button">
+								<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="hero__product-item">
+							<button class="product-spoiler btn-reset" type="button">
+								<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="hero__product-item">
+							<button class="product-spoiler btn-reset" type="button">
+								<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container">
+					<div class="about__wrapper">
+						<ul class="about__list">
+							<li class="about__item about__item--long">
+								<figure class="about__img-wrapper">
+									<picture>
+										<source media="(max-width: 767px)"
+											srcset="img/content/categories/comfort-home-mobile.jpg 1x, img/content/categories/comfort-home-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)"
+											srcset="img/content/categories/comfort-home-tablet.jpg 1x, img/content/categories/comfort-home-tablet@2x.jpg 2x">
+										<img class="about__img about__img--big" src="img/content/categories/comfort-home.jpg"
+											srcset="img/content/categories/comfort-home@2x.jpg 2x" width="321" height="465"
+											alt="Комфортная мебель в комнате">
+									</picture>
+									<figcaption class="about__img-text">Уют для дома</figcaption>
+								</figure>
+							</li>
+							<li class="about__item">
+								<figure class="about__img-wrapper">
+									<picture>
+										<source media="(max-width: 767px)"
+											srcset="img/content/categories/decor-home-mobile.jpg 1x, img/content/categories/decor-home-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)"
+											srcset="img/content/categories/decor-home-tablet.jpg 1x, img/content/categories/decor-home-tablet@2x.jpg 2x">
+										<img class="about__img about__img" src="img/content/categories/decor-home.jpg"
+											srcset="img/content/categories/decor-home@2x.jpg 2x" width="320" height="228"
+											alt="Ваза и горшок с растениями">
+									</picture>
+									<figcaption class="about__img-text">Декор для дома</figcaption>
+								</figure>
+							</li>
+							<li class="about__item">
+								<figure class="about__img-wrapper">
+									<picture>
+										<source media="(max-width: 767px)"
+											srcset="img/content/categories/furniture-pets-mobile.jpg 1x, img/content/categories/furniture-pets-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)"
+											srcset="img/content/categories/furniture-pets-tablet.jpg 1x, img/content/categories/furniture-pets-tablet@2x.jpg 2x">
+										<img class="about__img about__img--small" src="img/content/categories/furniture-pets.jpg"
+											srcset="img/content/categories/furniture-pets@2x.jpg 2x" width="320" height="180"
+											alt="Кот на лежанке смотрит в окно">
+									</picture>
+									<figcaption class="about__img-text">Мебель для животных</figcaption>
+								</figure>
+							</li>
+						</ul>
+						<div class="about__desc">
+							<h2 class="about__title">Комфортабельный</h2>
+							<p class="about__text">Houzzy&nbsp;&mdash; это место, где каждая деталь создана с&nbsp;любовью
+								и&nbsp;заботой, чтобы принести тепло и&nbsp;уют в&nbsp;ваш дом. Мы&nbsp;уверены, что красивая
+								и&nbsp;комфортабельная мебель способна создавать особенную атмосферу, наполнять пространство гармонией
+								и&nbsp;радостью. У&nbsp;нас только лучшее качество мебели, которое прослужит долгие годы и&nbsp;будет
+								приносить радость и&nbsp;удовольствие каждый день. Мы&nbsp;заботимся о&nbsp;каждом покупателе.</p>
+							<a class="about__btn btn" href="#">Перейти в&nbsp;каталог</a>
+						</div>
+					</div>
+					<div class="about__banner">
+						<h2 class="about__banner-title">
+							<span class="about__banner-name">Уютный</span>
+							<span class="about__banner-text">для вашего дома</span>
+						</h2>
+						<a class="about__banner-btn btn btn--secondary" href="#">Подробнее</a>
+					</div>
+				</div>
+			</section>
+			<section class="popular">
+				<div class="container">
+					<h2 class="popular__title">
+						Популярный
+					</h2>
+					<div class="popular__wrapper swiper">
+						<ul class="popular__list swiper-wrapper">
+							<li class="popular__item swiper-slide">
+								<a class="popular__link" href="#">
+									<picture>
+										<source media="(max-width: 767px)"
+											srcset="img/content/categories/sofas-mobile.jpg 1x, img/content/categories/sofas-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)"
+											srcset="img/content/categories/sofas-tablet.jpg 1x, img/content/categories/sofas-tablet@2x.jpg 2x">
+										<img class="popular__img" src="img/content/categories/sofas.jpg"
+											srcset="img/content/categories/sofas@2x.jpg 2x" width="338" height="280" alt="Диваны">
+									</picture>
+									<span class="popular__text">Диваны</span>
+									<svg class="popular__icon" width="28" height="28" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="popular__item swiper-slide">
+								<a class="popular__link" href="#">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/categories/tables-mobile.jpg 1x, img/content/categories/
+											tables-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)" srcset="img/content/categories/tables-tablet.jpg 1x, img/content/categories/
+											tables-tablet@2x.jpg 2x">
+										<img class="popular__img" src="img/content/categories/
+										tables.jpg" srcset="img/content/categories/
+										tables@2x.jpg 2x" width="338" height="280" alt="Столы">
+									</picture>
+									<span class="popular__text">Столы</span>
+									<svg class="popular__icon" width="28" height="28" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="popular__item swiper-slide">
+								<a class="popular__link" href="#">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/categories/chairs-mobile.jpg 1x, img/content/categories/
+										chairs-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)" srcset="img/content/
+										chairs-tablet.jpg 1x, img/content/categories/
+										chairs-tablet@2x.jpg 2x">
+										<img class="popular__img" src="img/content/categories/
+										chairs.jpg" srcset="img/content/categories/
+										chairs@2x.jpg 2x" width="338" height="280" alt="Стулья">
+									</picture>
+									<span class="popular__text">Стулья</span>
+									<svg class="popular__icon" width="28" height="28" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="popular__item swiper-slide">
+								<a class="popular__link" href="#">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/categories/home-decor-mobile.jpg 1x, img/content/categories/
+										home-decor-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)" srcset="img/content/categories/
+										home-decor-tablet.jpg 1x, img/content/categories/
+										home-decor-tablet@2x.jpg 2x">
+										<img class="popular__img" src="img/content/categories/
+										home-decor.jpg" srcset="img/content/categories/
+										home-decor@2x.jpg 2x" width="338" height="280" alt="Home Decor">
+									</picture>
+									<span class="popular__text">Home Decor</span>
+									<svg class="popular__icon" width="28" height="28" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="popular__item popular__item--flat swiper-slide">
+								<a class="popular__link" href="#">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/categories/beds-mobile.jpg 1x, img/content/categories/
+										beds-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)" srcset="img/content/categories/
+										beds-tablet.jpg 1x, img/content/categories/
+										beds-tablet@2x.jpg 2x">
+										<img class="popular__img" src="img/content/categories/
+										beds.jpg" srcset="img/content/categories/
+										beds@2x.jpg 2x" width="692" height="240" alt="Кровати">
+									</picture>
+									<span class="popular__text">Кровати</span>
+									<svg class="popular__icon" width="28" height="28" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="popular__item popular__item--flat swiper-slide">
+								<a class="popular__link" href="#">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/categories/armchair-mobile.jpg 1x, img/content/categories/
+										armchair-mobile@2x.jpg 2x">
+										<source media="(max-width: 1023px)" srcset="img/content/categories/
+										armchair-tablet.jpg 1x, img/content/categories/
+										armchair-tablet@2x.jpg 2x">
+										<img class="popular__img" src="img/content/categories/
+										armchair.jpg" srcset="img/content/categories/
+										armchair@2x.jpg 2x" width="692" height="240" alt="Кресла">
+									</picture>
+									<span class="popular__text">Кресла</span>
+									<svg class="popular__icon" width="28" height="28" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="kit">
+				<div class="container">
+					<h2 class="kit__title">Интерьерный</h2>
+					<div class="kit__wrapper">
+						<ul class="kit__interior-list">
+							<li class="kit__interior-item">
+								<button class="product-spoiler btn-reset" type="button">
+									<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="kit__interior-item">
+								<button class="product-spoiler btn-reset" type="button">
+									<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="kit__interior-item">
+								<button class="product-spoiler btn-reset" type="button">
+									<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="kit__interior-item">
+								<button class="product-spoiler btn-reset" type="button">
+									<svg class="product-spoiler__icon" width="20" height="20" aria-hidden="true">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+						<ul class="kit__product-list">
+							<li class="kit__product-card-item">
+								<div class="product-card--kit">
+									<a class="product-card__ref" href="product.html">
+										<picture>
+											<source media="(max-width: 767px)"
+												srcset="img/content/products/armchair-mobile.png 1x, img/content/products/armchair-mobile@2x.png 2x">
+											<source media="(max-width: 1152px)"
+												srcset="img/content/products/armchair-tablet.png 1x, img/content/products/armchair-tablet@2x.png 2x">
+											<img class="product-card__img" src="img/content/products/armchair.png"
+												srcset="img/content/products/armchair@2x.png 2x" width="212" height="240" alt="Кресло">
+										</picture>
+										<span class="product-card__text">
+											<span class="product-card__name">Кресло wood</span>
+											<span class="product-card__price">6&nbsp;150&nbsp;руб.</span>
+										</span>
+										<button class="product-card__btn btn btn-reset" type="button">Подробнее</button>
+									</a>
+								</div>
+							</li>
+							<li class="kit__product-card-item">
+								<div class="product-card--kit">
+									<a class="product-card__ref" href="product.html">
+										<picture>
+											<source media="(max-width: 767px)" srcset="img/content/products/lamp-mobile.png 1x, img/content/products/lamp-mobile@2x.png 2x">
+											<source media="(max-width: 1152px)"
+												srcset="img/content/products/lamp-tablet.png 1x, img/content/products/lamp-tablet@2x.png 2x">
+											<img class="product-card__img" src="img/content/products/lamp.png"
+												srcset="img/content/products/lamp@2x.png 2x" width="212" height="240" alt="Торшер">
+										</picture>
+										<span class="product-card__text">
+											<span class="product-card__name">Торшер wood</span>
+											<span class="product-card__price">1&nbsp;200&nbsp;руб.</span>
+										</span>
+										<button class="product-card__btn btn btn-reset" type="button">Подробнее</button>
+									</a>
+								</div>
+							</li>
+							<li class="kit__product-card-item">
+								<div class="product-card--kit">
+									<a class="product-card__ref" href="product.html">
+										<picture>
+											<source media="(max-width: 767px)" srcset="img/content/products/chest-mobile.png 1x, img/content/products/chest-mobile@2x.png 2x">
+											<source media="(max-width: 1152px)" srcset="img/content/products/chest-tablet.png 1x, img/content/products/chest-tablet@2x.png 2x">
+											<img class="product-card__img" src="img/content/products/chest.png" srcset="img/content/products/chest@2x.png 2x" width="212" height="240" alt="Комод">
+										</picture>
+										<span class="product-card__text">
+											<span class="product-card__name">Комод wood</span>
+											<span class="product-card__price">4&nbsp;470&nbsp;руб.</span>
+										</span>
+										<button class="product-card__btn btn btn-reset" type="button">Подробнее</button>
+									</a>
+								</div>
+							</li>
+							<li class="kit__product-card-item">
+								<div class="product-card--kit">
+									<a class="product-card__ref" href="product.html">
+										<picture>
+											<source media="(max-width: 767px)" srcset="img/content/products/pedestal-mobile.png 1x, img/content/products/pedestal-mobile@2x.png 2x">
+											<source media="(max-width: 1152px)"
+												srcset="img/content/products/pedestal-tablet.png 1x, img/content/products/pedestal-tablet@2x.png 2x">
+											<img class="product-card__img" src="img/content/products/pedestal.png"
+												srcset="img/content/products/pedestal@2x.png 2x" width="212" height="240" alt="Тумба">
+										</picture>
+										<span class="product-card__text">
+											<span class="product-card__name">Тумба wood</span>
+											<span class="product-card__price">2&nbsp;600&nbsp;руб.</span>
+										</span>
+										<button class="product-card__btn btn btn-reset" type="button">Подробнее</button>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="help">
+				<div class="container">
+					<form class="help-form" action="#" method="POST">
+						<h2 class="help-form__title">Помощь в&nbsp;выборе товаров</h2>
+						<p class="help-form__desc">Получите бесплатную консультацию менеджера</p>
+						<div class="help-form__wrapper">
+							<div class="help-form__input help-form__input--error">
+								<input class="help-form__field" id="user-name" type="text" placeholder="Имя" required>
+								<label class="help-form__label" for="user-name">Имя</label>
+							</div>
+							<div class="help-form__input">
+								<input class="help-form__field" id="user-phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+								<label class="help-form__label" for="user-phone">Телефон</label>
+							</div>
+							<button class="btn btn--secondary btn-reset" type="submit">Отправить</button>
+						</div>
+						<span class="help-form__consent">Нажимая на кнопку «Отправить», я соглашаюсь с условиями
+							<a class="help-form__privacy" href="#">Политики конфиденциальности</a><span>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		@@include("source/html/base/footer.html")
+	</div>
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

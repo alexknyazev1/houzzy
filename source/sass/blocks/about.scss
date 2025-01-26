@@ -1,0 +1,293 @@
+.about {
+margin-top: 120px;
+
+@media (max-width: 1399px) {
+		margin-top: 60px;
+	}
+
+	@media (max-width: 620px) {
+		margin-top: 50px;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		margin: 0 0 120px;
+
+		@media (max-width: 1399px) {
+			flex-direction: column-reverse;
+			gap: 60px;
+		}
+
+		@include vp-1023 {
+			margin: 0 0 60px;
+		}
+
+		@media (max-width: 620px) {
+			gap: 50px;
+			margin: 0 0 50px;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 321px 320px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		gap: 25px;
+		width: calc(50% - 15px);
+
+		@media (max-width: 1399px) {
+			grid-template-columns: repeat(3, 1fr);
+			width: 100%;
+		}
+
+		@include vp-1023 {
+			gap: 12px;
+		}
+
+		@media (max-width: 620px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 14px;
+		}
+	}
+
+	&__item--long {
+		grid-row: span 2;
+
+		@media (max-width: 1399px) {
+			grid-row: auto;
+		}
+
+		@media (max-width: 620px) {
+			grid-column: span 2;
+		}
+	}
+
+	&__img-wrapper {
+		display: block;
+		margin: 0;
+	}
+
+	&__img {
+		object-fit: cover;
+		width: 320px;
+		height: 228px;
+
+		@media (max-width: 1399px) {
+			height: 350px;
+			width: 100%;
+		}
+
+		@include vp-1023 {
+			height: 260px;
+			width: 100%;
+		}
+
+		@media (max-width: 620px) {
+			height: 200px;
+		}
+
+		&--big {
+			width: 321px;
+			height: 465px;
+
+			@media (max-width: 1399px) {
+				height: 350px;
+				width: 100%;
+			}
+
+			@include vp-1023 {
+				height: 260px;
+				width: 100%;
+			}
+
+			@media (max-width: 620px) {
+				height: 180px;
+			}
+		}
+
+		&--small {
+			width: 320px;
+			height: 180px;
+
+			@media (max-width: 1399px) {
+				height: 350px;
+				width: 100%;
+			}
+
+			@include vp-1023 {
+				height: 260px;
+				width: 100%;
+			}
+
+			@media (max-width: 620px) {
+				height: 200px;
+			}
+		}
+	}
+
+	&__img-text {
+		margin: 8px 0 0;
+		font-size: 16px;
+		line-height: 24px;
+
+		@media (max-width: 620px) {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 5px 0 0;
+		}
+	}
+
+	&__desc {
+		text-align: right;
+
+		@media (max-width: 1399px) {
+			text-align: center;
+		}
+
+		@media (max-width: 620px) {
+			text-align: start;
+		}
+	}
+
+	&__title {
+		font-size: 56px;
+		line-height: 60px;
+		letter-spacing: -0.04em;
+		font-weight: 400;
+		margin: 0 0 30px;
+		padding: 0;
+
+		@include vp-1023 {
+			font-size: 44px;
+			line-height: 56px;
+			margin: 0 0 20px;
+		}
+
+		@media (max-width: 620px) {
+			font-size: 40px;
+			line-height: 48px;
+			margin: 0 0 15px;
+		}
+
+		@include vp-374 {
+			font-size: 32px;
+			line-height: 40px;
+		}
+	}
+
+	&__text {
+		max-width: 650px;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 0;
+		margin: 0 0 30px;
+
+		@media (max-width: 1399px) {
+			margin: 0 auto 30px;
+			max-width: 800px;
+		}
+
+		@include vp-1023 {
+			max-width: 708px;
+		}
+
+		@media (max-width: 620px) {
+			margin: 0 0 30px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+	}
+
+	&__btn {
+		margin: 0 0 0 auto;
+	}
+
+	@media (max-width: 1399px) {
+		&__btn {
+			margin: 0 auto;
+		}
+	}
+
+	&__banner {
+		padding: 49px 80px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-image: url(../img/bg/bg-banner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		@include retina {
+			background-image: url(../img/bg/bg-banner@2x.jpg);
+		}
+
+		@include vp-1023 {
+			padding: 28px 40px 27px;
+		}
+
+		@media (max-width: 620px) {
+			flex-direction: column;
+			padding: 20px;
+		}
+	}
+
+	&__banner-title {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin: 0;
+		padding: 0;
+		font-weight: 400;
+
+		@include vp-1023 {
+			gap: 5px;
+		}
+
+		@media (max-width: 620px) {
+			margin: 0 0 20px;
+			text-align: center;
+		}
+	}
+
+	&__banner-name {
+		font-size: 40px;
+		line-height: 44px;
+
+		@include vp-1023 {
+			font-size: 32px;
+			line-height: 36px;
+		}
+
+		@media (max-width: 620px) {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+
+	&__banner-text {
+		font-size: 24px;
+		line-height: 28px;
+
+		@include vp-1023 {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		@media (max-width: 620px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	@media (max-width: 620px) {
+		&__banner-btn {
+			width: 260px;
+		}
+	}
+}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	@@include("source/html/base/head.html")
+	<title>Houzzy - интернет магазин товаров для дома</title>
+
+</head>
+
+<body>
+
+	<div style="display: none;">
+		@@include("build/img/sprite_auto.svg")
+	</div>
+
+	<div class="wrapper">
+		@@include("source/html/base/header.html", {
+		"index": true
+		})
+
+		<main>
+			<h1 class="visually-hidden">Каталог магазина Houzzy</h1>
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Мягкая мебель</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link breadcrumbs__link--active" href="#">Кресла</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="catalog">
+				<div class="container">
+					<div class="catalog__nav">
+						<h2 class="catalog__title">Кресла</h2>
+						<ul class="catalog__category-list">
+							<li class="catalog__category-item">
+								<button class="catalog__category btn-reset" type="button">Кресла в&nbsp;мягкой обивке</button>
+							</li>
+							<li class="catalog__category-item">
+								<button class="catalog__category btn-reset" type="button">Дизайнерские кресла</button>
+							</li>
+							<li class="catalog__category-item">
+								<button class="catalog__category btn-reset" type="button">Кресла без спинки</button>
+							</li>
+						</ul>
+						<button class="catalog__sorting-menu btn-reset" type="button">
+							<svg class="catalog__sorting-filter" width="24" height="24" aria-hidden="true">
+								<use xlink:href="#icon-filter"></use>
+							</svg>
+						</button>
+						<ul class="catalog__sorting-list">
+							<li class="catalog__sorting-item">
+								Сортировать:
+							</li>
+							<li class="catalog__sorting-item catalog__sorting-item--active">
+								<button class="catalog__sorting-btn btn-reset" type="button">
+									Популярные
+								</button>
+							</li>
+							<li class="catalog__sorting-item">
+								<button class="catalog__sorting-btn btn-reset" type="button">
+									<span class="catalog__sorting-text">По&nbsp;возрастанию цены</span>
+									<svg class="catalog__sorting-icon" width="16" height="16" aria-hidden="true">
+										<use xlink:href="#icon-arrow-top"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="catalog__sorting-item">
+								<button class="catalog__sorting-btn btn-reset" type="button">
+									<span class="catalog__sorting-text">По&nbsp;убыванию цены</span>
+									<svg class="catalog__sorting-icon" width="16" height="16" aria-hidden="true">
+										<use xlink:href="#icon-arrow-bottom"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<ul class="catalog__wrapper">
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/nort-cozy-mobile.png 1x, img/content/catalog/nort-cozy-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/nort-cozy-tablet.png 1x, img/content/catalog/nort-cozy-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/nort-cozy.png" srcset="img/content/catalog/nort-cozy@2x.png 2x" width="320" height="400" alt="Кресло Nort Cozy">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--woodland btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--submarine btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло nort cozy</a>
+									<span class="product-card__price">
+										<span class="product-card__value">4&nbsp;480&nbsp;руб.</span>
+										<span class="product-card__value-sale">5&nbsp;600&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/pikont-mobile.png 1x, img/content/catalog/pikont-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/pikont-tablet.png 1x, img/content/catalog/pikont-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/pikont.png" srcset="img/content/catalog/pikont@2x.png 2x" width="320" height="400" alt="Кресло Pikont">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--woodland btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--sambuca btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло pikont</a>
+									<span class="product-card__price">
+										<span class="product-card__value">5&nbsp;360&nbsp;руб.</span>
+										<span class="product-card__value-sale">7&nbsp;600&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/heavy-suite-mobile.png 1x, img/content/catalog/heavy-suite-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/heavy-suite-tablet.png 1x, img/content/catalog/heavy-suite-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/heavy-suite.png" srcset="img/content/catalog/heavy-suite@2x.png 2x" width="320" height="400" alt="Кресло Heavy Suite">
+									</picture>
+								</a>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--sambuca btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло heavy suite</a>
+									<span class="product-card__price">
+										<span class="product-card__value">9&nbsp;200&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/sea-breeze-mobile.png 1x, img/content/catalog/sea-breeze-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/sea-breeze-tablet.png 1x, img/content/catalog/sea-breeze-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/sea-breeze.png" srcset="img/content/catalog/sea-breeze@2x.png 2x" width="320" height="400" alt="Кресло Sea Breeze">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--equator btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--sambuca btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло sea breeze</a>
+									<span class="product-card__price">
+										<span class="product-card__value">3&nbsp;360&nbsp;руб.</span>
+										<span class="product-card__value-sale">4&nbsp;200&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/mafia-mobile.png 1x, img/content/catalog/mafia-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/mafia-tablet.png 1x, img/content/catalog/mafia-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/mafia.png" srcset="img/content/catalog/mafia@2x.png 2x" width="320" height="400" alt="Кресло Mafiafamily">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--woodland btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--sambuca btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло mafiafamily</a>
+									<span class="product-card__price">
+										<span class="product-card__value">9&nbsp;960&nbsp;руб.</span>
+										<span class="product-card__value-sale">12&nbsp;450&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/noilfo-mobile.png 1x, img/content/catalog/noilfo-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/noilfo-tablet.png 1x, img/content/catalog/noilfo-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/noilfo.png" srcset="img/content/catalog/noilfo@2x.png 2x" width="320" height="400" alt="Кресло Noilfo">
+									</picture>
+								</a>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--submarine btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--sambuca btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло noilfo</a>
+									<span class="product-card__price">
+										<span class="product-card__value">7&nbsp;860&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/sunbot-mobile.png 1x, img/content/catalog/sunbot-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/sunbot-tablet.png 1x, img/content/catalog/sunbot-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/sunbot.png" srcset="img/content/catalog/sunbot@2x.png 2x" width="320" height="400" alt="Кресло Sunbot">
+									</picture>
+								</a>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--equator btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--sambuca btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло sunbot</a>
+									<span class="product-card__price">
+										<span class="product-card__value">3&nbsp;880&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="product-card">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/dromsa-mobile.png 1x, img/content/catalog/dromsa-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/dromsa-tablet.png 1x, img/content/catalog/dromsa-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/dromsa.png" srcset="img/content/catalog/dromsa@2x.png 2x" width="320" height="400" alt="Кресло Dromsa">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__wrapper">
+									<button class="product-card__split btn-reset" type="button">
+										<svg class="product-card__split-icon" width="68" height="20" aria-hidden="true">
+											<use xlink:href="#icon-dolyami"></use>
+										</svg>
+									</button>
+									<ul class="product-card__colors">
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--submarine btn-reset" type="button"></button>
+										</li>
+										<li class="product-card__colors-item">
+											<button class="product-card__color product-card__color--equator btn-reset" type="button"></button>
+										</li>
+									</ul>
+								</div>
+								<span class="product-card__category">Мягкая мебель</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Кресло Dromsa</a>
+									<span class="product-card__price">
+										<span class="product-card__value">7&nbsp;120&nbsp;руб.</span>
+										<span class="product-card__value-sale">8&nbsp;900&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<form action="#" method="POST" class="submit-form">
+						<p class="submit-form__text">
+							Подпишитесь на&nbsp;рассылку и&nbsp;получите <b>500 бонусных баллов</b> на&nbsp;первую покупку
+						</p>
+						<div class="submit-form__input submit-form__input--error">
+							<input class="submit-form__field" type="email" placeholder="E-mail">
+							<p class="submit-form__consent">
+								Подписываясь на&nbsp;рассылку, я&nbsp;соглашаюсь с&nbsp;условиями <a href="#" class="submit-form__confidea">Политики конфиденциальности</a>
+							</p>
+						</div>
+						<button class="submit-form__btn btn btn--secondary btn-reset">Подписаться</button>
+					</form>
+					<h3 class="catalog__subtitle">Недавно просмотренное</h3>
+					<ul class="catalog__recent">
+						<li class="catalog__recent-item">
+							<div class="product-card product-card--recent">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/mandarin-mobile.png 1x, img/content/catalog/mandarin-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/mandarin-tablet.png 1x, img/content/catalog/mandarin-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/mandarin.png" srcset="img/content/catalog/mandarin@2x.png 2x" width="320" height="400" alt="Стул Mandarin">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Стул Mandarin</a>
+									<span class="product-card__price">
+										<span class="product-card__value">9&nbsp;960&nbsp;руб.</span>
+										<span class="product-card__value-sale">12&nbsp;450&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__recent-item">
+							<div class="product-card product-card--recent">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/womromo-mobile.png 1x, img/content/catalog/womromo-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/womromo-tablet.png 1x, img/content/catalog/womromo-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/womromo.png" srcset="img/content/catalog/womromo@2x.png 2x" width="320" height="400" alt="Торшер Womromo">
+									</picture>
+								</a>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Торшер Womromo</a>
+									<span class="product-card__price">
+										<span class="product-card__value">2&nbsp;450&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__recent-item">
+							<div class="product-card product-card--recent">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/olimpia-mobile.png 1x, img/content/catalog/olimpia-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/olimpia-tablet.png 1x, img/content/catalog/olimpia-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/olimpia.png" srcset="img/content/catalog/olimpia@2x.png 2x" width="320" height="400" alt="Стул Olimpia">
+									</picture>
+								</a>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Стул Olimpia</a>
+									<span class="product-card__price">
+										<span class="product-card__value">4&nbsp;890&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__recent-item">
+							<div class="product-card product-card--recent">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/turefa-mobile.png 1x, img/content/catalog/turefa-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/turefa-tablet.png 1x, img/content/catalog/turefa-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/turefa.png" srcset="img/content/catalog/turefa@2x.png 2x" width="320" height="400" alt="Стеклянная ваза Turefa">
+									</picture>
+								</a>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Стеклянная ваза Turefa</a>
+									<span class="product-card__price">
+										<span class="product-card__value">2&nbsp;368&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__recent-item">
+							<div class="product-card product-card--recent">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/agnesia-mobile.png 1x, img/content/catalog/agnesia-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/agnesia-tablet.png 1x, img/content/catalog/agnesia-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/agnesia.png" srcset="img/content/catalog/agnesia@2x.png 2x" width="320" height="400" alt="Стол Agnesia">
+									</picture>
+								</a>
+								<span class="product-card__sale">-20%</span>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Стол Agnesia</a>
+									<span class="product-card__price">
+										<span class="product-card__value">7&nbsp;120&nbsp;руб.</span>
+										<span class="product-card__value-sale">8&nbsp;900&nbsp;руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__recent-item">
+							<div class="product-card product-card--recent">
+								<a class="product-card__link" href="product.html">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/content/catalog/agisa-mobile.png 1x, img/content/catalog/agisa-mobile@2x.png 2x">
+										<source media="(max-width: 1152px)" srcset="img/content/catalog/agisa-tablet.png 1x, img/content/catalog/agisa-tablet@2x.png 2x">
+										<img class="product-card__img" src="img/content/catalog/agisa.png" srcset="img/content/catalog/agisa@2x.png 2x" width="320" height="400" alt="Ваза керамика Agisa">
+									</picture>
+								</a>
+								<div class="product-card__text">
+									<a class="product-card__name" href="#">Ваза керамика Agisa</a>
+									<span class="product-card__price">
+										<span class="product-card__value">1 800 руб.</span>
+									</span>
+								</div>
+								<div class="product-card__inner">
+									<button class="product-card__btn btn btn-reset" type="button">Добавить в корзину</button>
+									<button class="product-card__favourites btn-reset" type="button">
+										<svg class="product-card__favourites-icon" width="20" height="20" aria-hidden="true">
+											<use xlink:href="#icon-heart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		@@include("source/html/base/footer.html")
+	</div>
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

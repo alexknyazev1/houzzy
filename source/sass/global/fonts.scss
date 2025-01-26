@@ -1,0 +1,43 @@
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Rouble";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/rouble.woff2") format("woff2"),
+//     url("../fonts/rouble.woff") format("woff");
+// }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Mulish";
+
+  font-display: swap;
+  src:
+    url("../fonts/mulish-regular.woff2") format("woff2"),
+    url("../fonts/mulish-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Mulish";
+
+  font-display: swap;
+  src:
+    url("../fonts/mulish-medium.woff2") format("woff2"),
+    url("../fonts/mulish-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Mulish";
+
+  font-display: swap;
+  src:
+    url("../fonts/mulish-bold.woff2") format("woff2"),
+    url("../fonts/mulish-bold.woff") format("woff");
+}

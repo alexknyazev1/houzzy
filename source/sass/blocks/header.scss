@@ -1,0 +1,116 @@
+.header {
+	padding: 16px 0 15px;
+	border-bottom: 1px solid $color-swiss-coffee;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $color-hint-of-red;
+	z-index: 200;
+
+	@include vp-1023 {
+		padding: 18px 0 17px;
+	}
+
+	@include vp-767 {
+		padding: 14px 0 13px;
+	}
+
+	&--openned {
+		background-color: $color-default-white;
+
+		.main-nav__toggle {
+			&::before {
+				transform: translateY(0px) rotate(45deg);
+			}
+
+			&::after {
+				transform: translateY(0px) rotate(-45deg);
+			}
+		}
+
+		.main-nav__wrapper {
+			display: flex;
+			padding: 40px 0;
+		}
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__logo-img {
+		display: block;
+		width: 110px;
+		height: 40px;
+		border-radius: 6px;
+		overflow: hidden;
+
+		@include vp-1023 {
+			width: 100px;
+			height: 36px;
+		}
+
+		@include vp-767 {
+			width: 90px;
+			height: 32px;
+		}
+	}
+
+	&__user-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		justify-content: flex-end;
+
+		@include vp-767 {
+			gap: 15px;
+		}
+	}
+
+	&__user-item {
+		@include vp-1023 {
+			&:last-of-type {
+				display: none;
+			}
+		}
+	}
+
+	&__user-link {
+		display: block;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		height: 24px;
+		width: 24px;
+		cursor: pointer;
+		transition: color $trans-default;
+
+		@include vp-1023 {
+			width: 20px;
+			height: 20px;
+		}
+
+		&:hover,
+		&:focus {
+			color: $color-cloudy;
+		}
+	}
+
+	&__user-icon {
+		display: block;
+		width: 24px;
+		height: 24px;
+
+		@include vp-1023 {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

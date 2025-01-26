@@ -1,0 +1,34 @@
+.product-spoiler {
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	background-color: $color-hint-of-red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color $trans-default;
+
+	@include hover-focus {
+		background-color: $color-green-white;
+	}
+
+	@media (max-width: 1254px) {
+		width: 48px;
+		height: 48px;
+
+		&__icon {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	@include vp-767 {
+		width: 36px;
+		height: 36px;
+
+		&__icon {
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

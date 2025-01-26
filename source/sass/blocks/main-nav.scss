@@ -1,0 +1,153 @@
+.main-nav {
+	&__toggle {
+		width: 32px;
+		height: 32px;
+		outline: none;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+		display: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 28px;
+			height: 2px;
+			background-color: $color-main-accent;
+			border-radius: 3px;
+			transform: translateY(3px);
+			transition: transform $trans-default;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 28px;
+			height: 2px;
+			background-color: $color-main-accent;
+			border-radius: 3px;
+			transform: translateY(-3px);
+			transition: transform $trans-default;
+		}
+
+		@include vp-1023 {
+			display: flex;
+		}
+	}
+
+	&__wrapper {
+		@include vp-1023 {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			width: 100%;
+			height: calc(100% - 72px);
+			left: 0;
+			top: 72px;
+			gap: 68px;
+			overflow-y: auto;
+			background-color: $color-default-white;
+			z-index: 300;
+		}
+
+		@include vp-767 {
+			height: calc(100% - 60px);
+			top: 60px;
+		}
+	}
+
+	&__mobile-logo {
+		display: none;
+		pointer-events: none;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+		width: 500px;
+		height: 149px;
+
+		@include vp-1023 {
+			display: block;
+		}
+
+		@include vp-767 {
+			width: 340px;
+			height: 100px;
+		}
+
+		@include vp-374 {
+			width: 320px;
+			height: 80px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		gap: 50px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@include vp-1279 {
+			gap: 30px;
+		}
+
+		@include vp-1023 {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__item {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 500;
+
+		@include vp-1023 {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		@include vp-767 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__link {
+		color: $color-main-accent;
+		transition: color $trans-default;
+
+		&:hover,
+		&:focus {
+			color: $color-moon-mist;
+		}
+	}
+
+	&__phone {
+		display: none;
+		align-items: center;
+		gap: 5px;
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-finch;
+
+		@include vp-1023 {
+			display: flex;
+		}
+
+		@include vp-767 {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__phone-icon {
+		width: 20px;
+		height: 20px;
+	}
+}

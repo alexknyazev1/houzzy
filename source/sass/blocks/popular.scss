@@ -1,0 +1,157 @@
+.popular {
+	margin-top: 120px;
+
+	@media (max-width: 1399px) {
+		margin-top: 60px;
+	}
+
+	@media (max-width: 620px) {
+		margin-top: 50px;
+	}
+
+	&__title {
+		font-size: 48px;
+		line-height: 56px;
+		letter-spacing: -0.04em;
+		font-weight: 400;
+		margin: 0 0 40px;
+
+		@include vp-1023 {
+			font-size: 36px;
+			line-height: 40px;
+			text-align: center;
+			margin: 0 0 30px;
+		}
+
+		@media (max-width: 620px) {
+			font-size: 26px;
+			line-height: 32px;
+			margin: 0 0 20px;
+		}
+	}
+
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 16px;
+
+		@media (max-width: 1200px) {
+			display: flex;
+		}
+
+		@media (max-width: 620px) {
+			gap: 10px;
+		}
+	}
+
+	&__item {
+
+		@media (max-width: 1200px) {
+			max-width: 280px;
+		}
+
+		@media (max-width: 620px) {
+			max-width: 155px;
+		}
+
+		&--flat {
+			grid-column: span 2;
+
+			@media (max-width: 1200px) {
+				max-width: 468px;
+			}
+
+			.popular__img {
+				height: 240px;
+
+				@media (max-width: 1200px) {
+					height: 320px;
+				}
+
+				@media (max-width: 620px) {
+					height: 220px;
+				}
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		outline: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			background-color: rgba(20, 18, 17, 0.2);
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		&:hover,
+		&:focus {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(20, 18, 17, 0.6);
+			}
+
+			.popular__text {
+				opacity: 0;
+			}
+
+			.popular__icon {
+				display: block;
+			}
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 280px;
+		object-fit: cover;
+
+		@media (max-width: 1200px) {
+			height: 320px;
+		}
+
+		@media (max-width: 620px) {
+			height: 220px;
+		}
+	}
+
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 24px;
+		line-height: 28px;
+		color: $color-default-white;
+
+		@media (max-width: 620px) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+
+	&__icon {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $color-default-white;
+		width: 28px;
+		height: 28px;
+		z-index: 10;
+	}
+}

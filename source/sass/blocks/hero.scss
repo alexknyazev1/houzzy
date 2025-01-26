@@ -1,0 +1,259 @@
+.hero {
+	background-image: url("../img/bg/hero-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: calc(100vh - 72px);
+	max-height: 828px;
+	margin-top: 72px;
+	position: relative;
+
+	@include retina {
+		background-image: url("../img/bg/hero-bg@2x.jpg");
+	}
+
+	@media (max-width: 1254px) {
+		background-image: url("../img/bg/hero-bg-tablet.jpg");
+
+		@include retina {
+			background-image: url("../img/bg/hero-bg-tablet@2x.jpg");
+		}
+	}
+
+	@media (max-width: 869px) {
+		max-height: 548px;
+	}
+
+	@include vp-767 {
+		background-image: url("../img/bg/hero-bg-mobile.jpg");
+		height: calc(100vh - 60px);
+		margin-top: 60px;
+
+		@include retina {
+			background-image: url("../img/bg/hero-bg-mobile@2x.jpg");
+		}
+	}
+
+	@media (max-width: 500px) {
+		max-height: 340px;
+	}
+
+	&__product-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__product-item {
+		position: absolute;
+	}
+
+	&__product-item:nth-child(1) {
+		bottom: 15%;
+		left: 17.6%;
+
+		@media (max-width: 1739px) {
+			left: 13%;
+		}
+
+		@media (max-width: 1477px) {
+			left: 7%;
+		}
+
+		@media (max-width: 1255px) {
+			left: 4%;
+		}
+
+		@media (max-width: 1254px) {
+			bottom: 27%;
+			left: 10%;
+		}
+
+		@include vp-1023 {
+			bottom: 31%;
+			left: 9%;
+		}
+
+		@media (max-width: 880px) {
+			left: 5%;
+		}
+
+		@media (max-width: 869px) {
+			bottom: 28%;
+			left: 10%;
+		}
+
+		@media (max-width: 768px) {
+			bottom: 29.8%;
+			left: 8%;
+		}
+
+		@include vp-767 {
+			bottom: 20%;
+			left: 11%;
+		}
+
+		@media (max-width: 694px) {
+			bottom: 24%;
+		}
+
+		@media (max-width: 597px) {
+			left: 7%;
+		}
+
+		@media (max-width: 500px) {
+			bottom: 20%;
+			left: 10%;
+		}
+
+		@media (max-width: 414px) {
+			bottom: 23.5%;
+		}
+	}
+
+	&__product-item:nth-child(2) {
+		bottom: 17.7%;
+		left: 49.9%;
+
+		@media (max-width: 1254px) {
+			bottom: 30%;
+			left: 50%;
+		}
+
+		@include vp-1023 {
+			left: 49%;
+			bottom: 32%;
+		}
+
+		@media (max-width: 869px) {
+			left: 48%;
+			bottom: 30%;
+		}
+		
+		@media (max-width: 768px) {
+			bottom: 30.4%;
+		}
+
+		@include vp-767 {
+			bottom: 23%;
+			left: 53%;
+		}
+
+		@media (max-width: 694px) {
+			bottom: 25%;
+		}
+
+		@media (max-width: 597px) {
+			bottom: 26%;
+		}
+
+		@media (max-width: 500px) {
+			bottom: 21%;
+			left: 51%;
+		}
+
+		@media (max-width: 414px) {
+			left: 50%;
+			bottom: 25.2%;
+		}
+	}
+
+	&__product-item:nth-child(3) {
+		top: 13.9%;
+		right: 39.4%;
+
+		@media (max-width: 1254px) {
+			top: 8%;
+			right: 36%;
+		}
+
+		@include vp-1023 {
+			top: 14%;
+		}
+
+		@media (max-width: 869px) {
+			top: 10%;
+		}
+
+		@media (max-width: 768px) {
+			top: 15.2%;
+			right: 35.7%;
+		}
+
+		@include vp-767 {
+			top: 24%;
+			right: 33%;
+		}
+
+		@media (max-width: 694px) {
+			top: 26%;
+		}
+
+		@media (max-width: 597px) {
+			top: 28%;
+			right: 30%;
+		}
+
+		@media (max-width: 500px) {
+			top: 22%;
+			right: 31%;
+		}
+
+		@media (max-width: 414px) {
+			top: 30%;
+			right: 32%;
+		}
+	}
+
+	&__product-item:nth-child(4) {
+		bottom: 21.3%;
+		right: 27.6%;
+
+		@media (max-width: 1477px) {
+			right: 24%;
+		}
+
+		@media (max-width: 1477px) {
+			right: 18%;
+		}
+
+		@media (max-width: 1254px) {
+			bottom: 32%;
+			right: 24%;
+		}
+
+		@include vp-1023 {
+			bottom: 35%;
+			right: 22%;
+		}
+
+		@media (max-width: 869px) {
+			bottom: 33%;
+			right: 23%;
+		}
+
+		@media (max-width: 768px) {
+			bottom: 31.8%;
+			right: 21.3%;
+		}
+
+		@include vp-767 {
+			bottom: 27%;
+		}
+
+		@media (max-width: 597px) {
+			bottom: 28%;
+			right: 18%;
+		}
+
+		@media (max-width: 500px) {
+			bottom: 25%;
+			right: 20%;
+		}
+
+		@media (max-width: 414px) {
+			right: 17%;
+			bottom: 25%;
+		}
+	}
+}

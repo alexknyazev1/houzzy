@@ -1,0 +1,82 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+$color-default-black-04:            rgba(0, 0, 0, 0.04);
+$color-default-black-08:            rgba(0, 0, 0, 0.08);
+
+$color-main-accent:                 #141211;
+$color-main-accent-10:							rgba(20, 18, 17, 0.1);
+$color-main-accent-30:							rgba(20, 18, 17, 0.3);
+$color-main-accent-40:							rgba(20, 18, 17, 0.4);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-swiss-coffee:                #D7CFCB;
+$color-cloudy:                      #AEA29A;
+$color-moon-mist:                   #C8C8B6;
+$color-finch:                       #727254;
+$color-green-white:                 #DEDED2;
+$color-hint-of-red:                 #F4F3F2;
+$color-torch-red:                   #ff1553;
+$color-sauvignon:                   #EDEAE8;
+$color-locust:                      #A6A687;
+$color-whisper:                     #EAE9E9;
+$color-fair-pink:                   #EAE2DE;
+$color-woodland:                    #62664A;
+$color-submarine:                   #92A7A6;
+$color-kilamanjaro:                 #3B332F;
+$color-sambuca:                     #3D2E25;
+$color-equator:                     #E0B363;
+$color-soft-peach:                  #EAE6E5;
+$color-cloudy-dark:                 #B5AFA6;
+$color-mischka:											#A8A9AE;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-mulish:                         "Mulish", "Arial", sans-serif;
+
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
